@@ -16,5 +16,9 @@ includeBuild('simonaAPI') {
         substitute module('com.github.ie3-institute:simonaAPI') using project(':')
     }
 }
-includeBuild 'simopsim'
+includeBuild('simopsim') {
+    dependencySubstitution {
+        substitute module('com.github.ie3-institute:simopsim') using project(':')
+    }
+}
 includeBuild 'opsim_simona_demo_extern'
