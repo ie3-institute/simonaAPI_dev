@@ -10,7 +10,6 @@
 
 
 rootProject.name = 'simonaAPI_dev'
-includeBuild 'simona'
 includeBuild('simonaAPI') {
     dependencySubstitution {
         substitute module('com.github.ie3-institute:simonaAPI') using project(':')
@@ -21,4 +20,5 @@ includeBuild('simopsim') {
         substitute module('com.github.ie3-institute:simopsim') using project(':')
     }
 }
+includeBuild 'simona'
 includeBuild 'opsim_simona_demo_extern'
